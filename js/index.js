@@ -1,7 +1,5 @@
 
-  const inputBusqueda = document.getElementById("inputBusqueda").value;
-
-  fetch(`https://bsite.net/metalflap/td-producto?q=${inputBusqueda}`)
+  fetch('https://bsite.net/metalflap/td-producto/idCategoria/118')
     .then(response => {
       if (!response.ok) {
         throw new Error("Error al buscar productos");
