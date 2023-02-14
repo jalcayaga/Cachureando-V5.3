@@ -31,6 +31,13 @@ body {
   }
 }
 
+.botonVolver{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .sidebar-sticky {
   height: calc(100vh - 48px);
   overflow-x: hidden;
