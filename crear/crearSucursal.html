@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Cachureando v5.3</title>
+<!-- Boostrap 5 -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+<!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">
+    <img src="../img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+Cachureando
+  </a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <form class="d-flex container" role="search">
+    <input class="form-control form-control-dark rounded-0 border-0" type="search" placeholder="Buscar" aria-label="Search">
+  </form>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="#">Cerrar Sesión</a>
+    </div>
+  </div>
+  
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <div class="accordion" id="accordionExample">
+<!-- ------------------------------ Productos ------------------------------ -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Productos
+    </button>
+  </h2>
+  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <ul class="nav flex-column mb-2">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">
+            <span data-feather="file-text" class="align-text-bottom"></span>
+            Lista de Productos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./crear/crearProducto.html">
+            <span data-feather="file-text" class="align-text-bottom"></span>
+            Crear Productos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../editar/editarProducto.html">
+            <span data-feather="file-text" class="align-text-bottom"></span>
+            Editar Productos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../eliminar/eliminarProducto.html">
+            <span data-feather="file-text" class="align-text-bottom"></span>
+            Eliminar Productos
+          </a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------ Categorias ------------------------------ -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Categorias
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../categoria.html">
+                      <span data-feather="file-text" class="align-text-bottom"></span>
+                      Lista de Categorias
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./crear/crearCategoria.html">
+                      <span data-feather="file-text" class="align-text-bottom"></span>
+                      Crear Categorias
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../editar/editarCategoria.html">
+                      <span data-feather="file-text" class="align-text-bottom"></span>
+                      Editar Categoria
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../eliminar/eliminarCategoria.html">
+                      <span data-feather="file-text" class="align-text-bottom"></span>
+                      Eliminar Categoria
+                    </a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+<!-- ------------------------------ Sucursales ------------------------------ -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Sucursales
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+
+      <ul class="nav flex-column">
+        <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="../sucursales.html">
+        <span data-feather="home" class="align-text-bottom"></span>
+        Lista de Sucursales
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./crear/crearSucursal.html">
+        <span data-feather="file" class="align-text-bottom"></span>
+        Crear Sucursales
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../editar/editarSucursal.html">
+        <span data-feather="shopping-cart" class="align-text-bottom"></span>
+        Editar Sucursales
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../eliminar/eliminarSucursal.html">
+        <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+        Eliminar Sucursales
+      </a>
+    </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          
+<!-- ------------------------------ Links ------------------------------ -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Links
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../links.html">
+                      <span data-feather="file-text" class="align-text-bottom"></span>
+                      Lista de Links
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../linksGroup.html">
+                      <span data-feather="file-text" class="align-text-bottom"></span>
+                      Lista Grupo de Links
+                    </a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      
+
+      <h2>Crear Sucursal</h2>
+      <form id="formSucursal" class="col-6">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary mt-2">Crear</button>
+      </form>
+      
+    </main>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../js/crearSucursal.js"></script>
+  </body>
+</html>
