@@ -1,6 +1,7 @@
-//clase que representa el producto:
-class Producto {
-    constructor(nombre, precio, link, stock, etiqueta, descripcion, idCategoria, idSucursal) {
+//clase que representa el producto:class Producto {
+  class Producto {
+    constructor(id, nombre, precio, link, stock, etiqueta, descripcion, idCategoria, idSucursal) {
+      this.id = id;
       this.nombre = nombre;
       this.precio = precio;
       this.link = link;
@@ -11,6 +12,7 @@ class Producto {
       this.idSucursal = idSucursal;
     }
   }
+  
 //creamos un nuevo producto utilizando la clase que definimos anteriormente y llamamos la info desde el formulario:
 document.getElementById("formProducto").addEventListener("submit", e => {
     e.preventDefault();
