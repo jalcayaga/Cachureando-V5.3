@@ -1,19 +1,19 @@
-document.getElementById("formEliminarProducto").addEventListener("submit", e => {
+document.getElementById("formEliminarCategoria").addEventListener("submit", e => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const idProducto = formData.get("id");
+    const idCategoria = formData.get("id");
   
-    fetch(`https://bsite.net/metalflap/td-producto/${idProducto}`, {
+    fetch(`https://bsite.net/metalflap/td-categoria/${idCategoria}`, {
       method: "DELETE"
     })
       .then(response => {
         if (!response.ok) {
-          throw new Error("Error al eliminar el producto");
+          throw new Error("Error al eliminar la Categoria");
         }
         return response.json();
       })
       .then(data => {
-        console.log("Producto eliminado exitosamente");
+        console.log("Categoria eliminada exitosamente");
         console.log(data);
       })
       .catch(error => {

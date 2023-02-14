@@ -206,7 +206,7 @@ Cachureando
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./editar/editarSucursal.html">
+                    <a class="nav-link" href="./editarSucursal.html">
                       <span
                         data-feather="file-text"
                         class="align-text-bottom"
@@ -282,11 +282,15 @@ Cachureando
       
 
       <h2>Editar Categoria</h2>
-      <form id="formCategoria" class="col-6">
-        <div class="form-group">
-          <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
+      <form id="formEditarCategoria" class="col-6">
+          <div class="form-group">
+            <label for="id">ID</label>
+            <input type="number" class="form-control" id="id" name="id">
+          </div>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+          </div>
         <button type="submit" class="btn btn-primary mt-2">Editar</button>
       </form>
       

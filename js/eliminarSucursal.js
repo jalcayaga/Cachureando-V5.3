@@ -1,19 +1,19 @@
-document.getElementById("formEliminarProducto").addEventListener("submit", e => {
+document.getElementById("formEliminarSucursal").addEventListener("submit", e => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const idProducto = formData.get("id");
   
-    fetch(`https://bsite.net/metalflap/td-producto/${idProducto}`, {
+    fetch(`https://bsite.net/metalflap/td-sucursal/${idProducto}`, {
       method: "DELETE"
     })
       .then(response => {
         if (!response.ok) {
-          throw new Error("Error al eliminar el producto");
+          throw new Error("Error al eliminar la sucurusal");
         }
         return response.json();
       })
       .then(data => {
-        console.log("Producto eliminado exitosamente");
+        console.log("Sucursal eliminada exitosamente");
         console.log(data);
       })
       .catch(error => {

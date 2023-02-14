@@ -1,35 +1,28 @@
 document
-  .getElementById("formEditarProducto")
+  .getElementById("formEditarSucursal")
   .addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const idProducto = formData.get("id");
-    const actualizacionProducto = {
+    const actualizacionSucursal = {
+      id: formData.get("id"),
       nombre: formData.get("nombre"),
-      precio: formData.get("precio"),
-      link: formData.get("link"),
-      stock: formData.get("stock"),
-      etiqueta: formData.get("etiqueta"),
-      descripcion: formData.get("descripcion"),
-      idCategoria: formData.get("idCategoria"),
-      idSucursal: formData.get("idSucursal"),
     };
 
-    fetch(`https://bsite.net/metalflap/td-producto/${idProducto}`, {
+    fetch('https://bsite.net/metalflap/td-sucursal', {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(actualizacionProducto),
+      body: JSON.stringify(actualizacionSucursal),
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Error al actualizar el producto");
+          throw new Error("Error al actualizar sucursal");
         }
         return response.json();
       })
       .then((data) => {
-        console.log("Producto actualizado exitosamente");
+        console.log("Sucursal actualizada exitosamente");
         console.log(data);
       })
       .catch((error) => {

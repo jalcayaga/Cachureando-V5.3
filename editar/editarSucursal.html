@@ -136,7 +136,7 @@ Cachureando
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="./editar/editarSucursal.html">
+      <a class="nav-link active" href="./editarSucursal.html">
         <span data-feather="shopping-cart" class="align-text-bottom"></span>
         Editar Sucursales
       </a>
@@ -189,10 +189,14 @@ Cachureando
       
 
       <h2>Editar Sucursal</h2>
-      <form id="formSucursal" class="col-6">
+      <form id="formEditarSucursal" class="col-6">
+        <div class="form-group">
+          <label for="id">ID</label>
+          <input type="number" class="form-control" id="id" name="id">
+        </div>
         <div class="form-group">
           <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <input type="text" class="form-control" id="nombre" name="nombre">
         </div>
         
         <button type="submit" class="btn btn-primary mt-2">Editar</button>
