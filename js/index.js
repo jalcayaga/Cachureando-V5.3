@@ -1,5 +1,5 @@
 
-  fetch('https://bsite.net/metalflap/td-producto/idCategoria/118')
+  fetch("https://63ebdf4632a081172393611a.mockapi.io/api/v1/producto")
     .then(response => {
       if (!response.ok) {
         throw new Error("Error al buscar productos");
